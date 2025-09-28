@@ -1,3 +1,5 @@
+print("Input Data Perhitungan Gaji Karyawan PT.BOM".center(60, "="))
+
 nama_karyawan = str(input("Masukkan nama karyawan :"))
 jabatan_karyawan = str(input("Masukkan jabatan karyawan :"))
 hari_kerja = int(input("Masukkan hari kerja anda :"))
@@ -40,11 +42,19 @@ else:
 
 total_gaji = ((bayaran_perjam * jam_kerja) * hari_kerja) + (jumlah_lembur * per_perlemburan)
 
-print( "Nama Karyawan : ", nama_karyawan)
-print("Harga Petasan per pcs : ", harga_petasan_perPCS)
-print("Hari Kerja : ", hari_kerja)
-print("Jam Kerja : ", jam_kerja)
-print("Jumlah Lembur : ", jumlah_lembur)
-print("Bayaran per jam :", bayaran_perjam)
-print("Bayaran per lemburan :", per_perlemburan)
-print("Total gaji anda :", total_gaji)
+
+print("=" * 50)
+print("        Penghitung Gaji Karyawan PT. BOM        ")
+print("=" * 50)
+
+print("Nama Karyawan           : ", nama_karyawan)
+print(f"Harga Petasan per pcs   : Rp {harga_petasan_perPCS:,.0f}")
+print("Hari Kerja              : ", hari_kerja, "hari")
+print("Jam Kerja               : ", jam_kerja, "jam")
+print("Jumlah Lembur           : ", jumlah_lembur)
+print("-" * 50)
+print(f"Bayaran per jam         : Rp {bayaran_perjam:,.0f}")
+print(f"Bayaran per lemburan    : Rp {per_perlemburan:,.0f}")
+print("-" * 50)
+print(f"Total gaji anda  : Rp {total_gaji:,.0f}")
+print("-" * 50)

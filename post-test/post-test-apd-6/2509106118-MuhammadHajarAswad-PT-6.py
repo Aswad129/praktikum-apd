@@ -29,7 +29,6 @@ while True:
         regis_password = input("Masukkan password  :")
         new_user = len(data_login) + 1
 
-
         data_login[new_user] = {"username": regis_username, "password": regis_password, "tipe": "user"}
         print("Anda berhasil register")
     
@@ -128,7 +127,7 @@ while True:
 """
                         )
                         menu_user = input("Pilih menu 1-2  :")
-                        if menu_user == "1":
+                        if menu_user == "1":  
                             os.system('cls' if os.name == 'nt' else 'clear')
                             print("LIHAT FILM & TAHUN RILIS")
                             i = 0

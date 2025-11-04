@@ -2,7 +2,6 @@ import os
 from data import data_login
 from termcolor import colored
 
-
 def register():
     regis_username = input("Masukkan username  :")
     regis_password = input("Masukkan password  :")
